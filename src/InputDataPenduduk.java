@@ -21,6 +21,19 @@ public class InputDataPenduduk {
             switch (pilihan) {
                 case 1:
                     // Kode untuk tambah penduduk
+                    System.out.print("Masukkan nama penduduk: ");
+                    String nama = scanner.nextLine();
+                    System.out.print("Masukkan umur penduduk: ");
+                    int umur = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.print("Masukkan alamat penduduk: ");
+                    String alamat = scanner.nextLine();
+
+                    Penduduk penduduk = new Penduduk(nama, umur, alamat);
+                    daftarPenduduk.add(penduduk);
+                    System.out.println("Data penduduk berhasil ditambahkan.");
+                    System.out.println();
+
                     break;
                 case 2:
                     // Kode untuk tampilkan daftar penduduk
