@@ -37,6 +37,16 @@ public class InputDataPenduduk {
                     break;
                 case 2:
                     // Kode untuk tampilkan daftar penduduk
+                    System.out.println("Daftar Penduduk:");
+                    for (int i = 0; i < daftarPenduduk.size(); i++) {
+                        Penduduk p = daftarPenduduk.get(i);
+                        System.out.println("Penduduk " + (i + 1) + ":");
+                        System.out.println("Nama: " + p.getNama());
+                        System.out.println("Umur: " + p.getUmur());
+                        System.out.println("Alamat: " + p.getAlamat());
+                        System.out.println();
+                    }
+
                     break;
                 case 3:
                     // Kode untuk keluar
